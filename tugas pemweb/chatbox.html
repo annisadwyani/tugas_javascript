@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <style>
+        body {
+            background-color: rgb(122, 189, 252);
+        }
+ 
+     </style>
+</head>
+<body>
+     
+    <h1>Hai Apa Kabar:)</h1>
+    <p>Udah lama ya sejak waktu itu</p>
+    <p>btw aku kangen hehe</p>
+    <p>tapi aku sadar diri ko</p>
+    <p>jaga diri baik baik yaa:)</p>
+    <p>Dont forget to be happy ^_^ </p>
+    <input id="pesan" style="width: 50%" type="text" name="pesan">
+    <button type="submit" onclick="tebaknama()">COBA TEBAK</button>
+    <p id="hasil"></p>
+
+    <script>
+        let nama = "orang yang pernah kamu sayang :)";
+        function tebaknama(){
+            document.getElementById("hasil").innerHTML = "Aku Adalah " + nama;
+        }
+    </script>
+</body>
+</html>

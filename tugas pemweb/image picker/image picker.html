@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<html lang="id">
+    <head>	
+        <title>IMAGE PICKER</title></head>
+        <style type="text/css">
+        body
+            {
+            background-color: rgb(250, 228, 200);
+               
+            } 
+        #judul
+        {
+            font-family: monospace;
+            color: rgb(250, 114, 73);
+        }    
+        
+        </style>
+        
+        <body>
+            <h1 id="judul" align="center"> Karakter Rapunzel </h1> 
+              <br>
+              <center>
+                <select onchange="gantigambar();" id="listgambar">
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/cover.png">Pilih Karakter</option>		
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/Rapunzel.png">Rapunzel</option>
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/Flynn_Rider.png">Flynn Rider</option>
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/mother-gothel.png">Mother Gothel</option>
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/queen%20arianna.png">Queen Arianna</option>
+                <option value="http://localhost/tugas%20pemweb/image%20picker/gambar/hook-hand%20thug.png">hook-han thug</option>
+            </center>
+            </select>		
+            <br/>	
+            <img src="gambar/logo.png" style="width: 100%" id="gambar">
+            <script type="text/javascript">	
+                function gantigambar()
+                 {		
+                    let gambar = document.getElementById("listgambar").value;		
+                     document.getElementById("gambar").src = gambar;	
+                     alert("Ini adalah karakter " + gambar);	  
+                   }
+               </script>
+         </body>
+</html>
